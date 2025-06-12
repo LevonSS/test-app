@@ -1,0 +1,18 @@
+@use "../../styles/global.scss" as global;
+
+.productCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @include global.respond(sm) {
+    flex: 0 1 calc(50% - 8px);
+  }
+
+  @include global.respond(md) {
+    flex: 0 1 calc(33% - 9px);
+  }
+
+  @include global.respond(xl) {
+    flex: 0 1 calc(32% - 8px);
+  }
+}

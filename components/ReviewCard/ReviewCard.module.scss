@@ -1,0 +1,21 @@
+@use "../../styles/global.scss" as global;
+
+.reviewBox {
+  background-color: var(--bg-color);
+  color: black;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 360px;
+  min-height: 300px;
+
+  @include global.respond(sm) {
+    flex: 0 1 calc(50% - 8px);
+    max-width: 468px;
+  }
+
+  @include global.respond(xl) {
+    flex: 0 calc(45% - 14px);
+    box-sizing: initial;
+  }
+}
